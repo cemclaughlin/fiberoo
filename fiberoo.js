@@ -1,5 +1,5 @@
 function fib() {
-  let x = [0, 1];
+  const x = [0, 1];
 
   for (let i = 2; i < 100; i++){
     x[i] = x[i - 1] + x[i - 2];
@@ -14,6 +14,8 @@ function numsToStrings(array) {
 
 console.log(numsToStrings(fib()));
 
-functionEvenNums(array){
-    return_.reduce(array, function)
+function numEvenNums(array) {
+  return _.filter(array, num => ((num % 2) === 0)).length;
 }
+
+console.log(numEvenNums(fib()));
